@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h2>Click on button to open Login Form</h2>
+        <button class="loginBtn">Login</button>
+
+        <div class="myModal" id="modak">
+            <form action="">
+                <div class="heaging">
+                    <h2>Login</h2>
+                    <samp class="closeBtn">&times;</samp>
+                </div>
+
+                <div class="container">
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="Enter Your Name" name="name" required>
+
+                    <label for="pas">Password</label>
+                    <input type="password" placeholder="Enter Your Pasword" name="pas" >
+
+                    <button type="submit">Loggin</button>
+
+                    <label>
+                        <input type="checkbox" name="" id="" checked="checked">Remember Me
+                    </label>
+                </div>
+
+                <div class="container">
+                    <p>Forgot ? <a href="">Password</a></p>
+                    <p>Don't have account ?<a href="">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
