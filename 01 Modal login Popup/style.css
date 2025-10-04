@@ -14,6 +14,11 @@ body{
     place-items: center;
 }
 
+.main, .myModal{
+    display: grid;
+    place-items: center;
+}
+
 .loginBtn{
     width: 200px;
     height: 40px;
@@ -29,11 +34,12 @@ form{
     background-color: white;
     color: black;
     padding: 20px 0;
+    width: 80%;
+    transition: 0.8s ease-in-out;
 }
 
 .container{
     padding: 16px 16px 0px;
-    box-sizing: border-box;
 }
 
 input[type="text"], input[type="password"]{
@@ -79,4 +85,15 @@ p{
     margin: 8px;
     text-align: center;
     font-size: 15px;
+}
+
+.myModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 100px;
+    overflow: auto;
 }
