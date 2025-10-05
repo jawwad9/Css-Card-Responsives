@@ -8,5 +8,9 @@ function openModal(){
 
 function closeModal(){
     modal.style.display = 'none'
+     console.log("close");
+    console.log("close");
+    console.log("close");
+
     console.log("close");
 }
