@@ -19,8 +19,8 @@ function readAll(){
         <td>${record.name}</td>
         <td>${record.email}</td>
         <td>
-        <button>Edit</button>
-        <button>Delete</button>
+        <button  class="editBtn" onclick="editBtn()">Edit</button>
+        <button  class="deleteBtn" onclick="deleteBtn()">Delete</button>
         </td>
         <tr/>`
     })
@@ -46,4 +46,14 @@ function add(){
 
     createData.style.display = 'none';
     addBtn.style.display = 'block';
+}
+
+function editBtn(){
+    console.log("edit");
+    
+}
+
+function deleteBtn(){
+    console.log("delete");
+    
 }
