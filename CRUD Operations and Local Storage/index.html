@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD LocalStorage App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body onload="readAll()">
-    
-    <div class="container">
-        <div class="form-container">
-            <form class="create-form">
-                <input type="text" class="name" placeholder="Enter Your Name">
-                <input type="email" class="email" placeholder="Enter Your Email">
-                <button type="button" onclick="add()">Create</button>
-            </form>
-            <form class="update-form">
-                <input type="text" class="uname" placeholder="Enter Your Name">
-                <input type="email" class="uemail" placeholder="Enter Your Email">
-                <button type="button">Update</button>
-            </form>
-            <div class="add-div">
-                <button onclick="create()">Add +</button>
-            </div>
-            <table>
-                <thead>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Action</th>
-                </thead>
-                <tbody class="data-table"></tbody>
-            </table>
-        </div>
-    </div>
+  <div class="container">
+    <div class="form-container">
+      
+      <!-- Create Form -->
+      <form class="create-form">
+        <input type="text" class="name" placeholder="Enter Your Name">
+        <input type="email" class="email" placeholder="Enter Your Email">
+        <button type="button" onclick="add()">Create</button>
+      </form>
 
-    <script src="script.js"></script>
+      <!-- Update Form -->
+      <form class="update-form">
+        <input type="text" class="uname" placeholder="Enter Your Name">
+        <input type="email" class="uemail" placeholder="Enter Your Email">
+        <input type="text" class="id" hidden>
+        <button type="button" onclick="update()">Update</button>
+      </form>
+
+      <!-- Add Button -->
+      <div class="add-div">
+        <button id="addBtn" onclick="create()">Add +</button>
+      </div>
+
+      <!-- Data Table -->
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="data-table"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

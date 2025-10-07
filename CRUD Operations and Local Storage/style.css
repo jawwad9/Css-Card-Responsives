@@ -1,87 +1,206 @@
-*{
-    margin: 0;
+/* ---------- Global Style ---------- */
+/* Removes default margin & padding, makes sizing consistent, sets font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Main Container ---------- */
+/* Full-screen black background with centered content */
+.container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* ---------- Form Container ---------- */
+/* White box for form, centered, with shadow and rounded corners */
+.form-container {
+  background-color: #fff;
+  width: 40%;
+  min-height: 80vh;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------- Forms ---------- */
+/* Makes both create and update forms centered and column aligned */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input field styling */
+form input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(128, 128, 128);
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Create & Update buttons styling */
+form button {
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+form button:hover {
+  background-color: rgb(0, 100, 0);
+}
+
+/* ---------- Add Button ---------- */
+/* Add button container centered below form */
+.add-div {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Add button styling */
+.add-div button {
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+/* Hover effect for Add button */
+.add-div button:hover {
+  background-color: rgb(0, 100, 0);
+}
+
+/* ---------- Table ---------- */
+/* Makes table scrollable horizontally on small screens */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Table header cells */
+thead th {
+  border: 1px solid #999;
+  background-color: #f1f1f1;
+  padding: 8px;
+}
+
+/* Table data cells */
+td {
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+/* ---------- Buttons ---------- */
+/* Edit button styling */
+.editBtn {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Delete button styling */
+.deleteBtn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* ---------- Hide Forms Initially ---------- */
+/* Hide both forms until triggered */
+.create-form, .update-form {
+  display: none;
+}
+
+/* ---------- ✅ Responsive Design ---------- */
+
+/* For tablets & small laptops */
+@media (max-width: 1024px) {
+  .form-container {
+    width: 60%;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 14px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+    min-height: auto;
+  }
+
+  form input, form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .add-div {
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-.container{
-    background-color: rgb(0, 0, 0);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.form-container{
-    background-color: rgb(255, 255, 255);
-    width: 40%;
-    height: 80vh;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input{
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid rgb(128, 128, 128);
-    margin: 5px 0;
-}
- 
-form button{
-    background-color: rgb(0, 128, 0);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 7px;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-.add-div{
+  .add-div button {
     width: 100%;
-    padding: 10px 0 0 90px;
-}
+    font-size: 14px;
+  }
 
+  table th, table td {
+    font-size: 13px;
+  }
 
-.add-div button{
-    background-color: rgb(0, 128, 0);
-    color: rgb(255, 255, 255);
-    padding: 8px;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
-table{
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    border: 1px solid rgb(128, 128, 128);
-}
-
-thead th{
-    border: 1px solid rgb(128, 128, 128);
-
-}
-
-.editBtn{
-    background-color: blue;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.deleteBtn{
-    background-color: red;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.create-form, .update-form{
-    display: none;
+  .editBtn, .deleteBtn {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
 }
