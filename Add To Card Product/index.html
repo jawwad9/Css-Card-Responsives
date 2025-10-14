@@ -12,12 +12,23 @@
   <!-- 🔝 Header -->
   <header>
     <h1>🛍️ Fake Store</h1>
-    <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    <div id="cart-icon">🛒 Cart (<span id="cart-count">0</span>)</div>
   </header>
 
   <!-- 🧱 Product Container -->
   <div class="container"></div>
 
+  <!-- 🧾 Cart Panel -->
+  <div class="cart-panel" id="cartPanel">
+    <h3>🛍 Your Cart</h3>
+    <div id="cartItems"></div>
+    <h4 id="totalPrice">Total: $0</h4>
+    <button id="checkoutBtn">Checkout</button>
+    <button id="closeCart">Close</button>
+  </div>
+
+
+  
   <script src="script.js"></script>
 </body>
 </html>
