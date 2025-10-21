@@ -17,6 +17,14 @@ function checkUser() {
 checkUser();
 
 // 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
+// 🔹 Logout functionality
 const logoutBtn = document.getElementById('logoutBtn');
 
 logoutBtn.addEventListener('click', () => {
