@@ -8,17 +8,11 @@ function checkUser() {
     window.location.href = 'login.html';
   } else {
     // If logged in, show welcome message
-    // If logged in, show welcome message
-    // If logged in, show welcome message
-    // If logged in, show welcome message
     const welcomeMsg = document.getElementById('welcomeMsg');
     welcomeMsg.textContent = `Welcome, ${currentUser}! 👋`;
   }
 }
 
-// 🔹 Run check when page loads
-// 🔹 Run check when page loads
-// 🔹 Run check when page loads
 // 🔹 Run check when page loads
 checkUser();
 
@@ -26,10 +20,6 @@ checkUser();
 const logoutBtn = document.getElementById('logoutBtn');
 
 logoutBtn.addEventListener('click', () => {
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
   alert('👋 You have logged out!');
   localStorage.removeItem('currentUser'); // remove user
   window.location.href = 'login.html'; // redirect
