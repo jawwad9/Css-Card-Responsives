@@ -21,28 +21,6 @@ const logoutBtn = document.getElementById('logoutBtn');
 
 logoutBtn.addEventListener('click', () => {
   alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
-  alert('👋 You have logged out!');
   localStorage.removeItem('currentUser'); // remove user
   window.location.href = 'login.html'; // redirect
 });
